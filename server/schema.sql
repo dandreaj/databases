@@ -8,13 +8,15 @@ CREATE TABLE messages (
   roomID INT,
   username TEXT,
   createdAt TIME,
-  updatedAt TIME
+  updatedAt TIME,
+  message VARCHAR(255),
+  roomname VARCHAR(255)
 );
 
 
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  user VARCHAR(255)
+  username VARCHAR(255)
   /* Describe your table here.*/
 );
 
